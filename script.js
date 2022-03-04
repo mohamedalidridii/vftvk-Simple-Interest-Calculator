@@ -8,8 +8,8 @@ function compute()
     if (isNaN(Amount) || Amount == 0 || Amount< 0 || Amount == null) {  
         alert("Please enter a positive number")
         document.getElementById("principal").focus();
-         } 
-        document.getElementById("result").innerHTML=( "If you deposit " + Amount + "," + " at an interest rate of " + Rate +"%," + " You will receive an amount of " +  result);
+         } else {
+        document.getElementById("result").innerHTML=( "If you deposit " + Amount + "," + " at an interest rate of " + Rate +"%," + " You will receive an amount of " +  result);}
      
 }
 
